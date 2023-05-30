@@ -2,16 +2,31 @@ import { deskTool } from 'sanity/desk';
 import { visionTool } from '@sanity/vision';
 
 import schemas from './schemas/schemas.js';
+import settings from './schemas/structure/settings.js';
+import blog from './schemas/structure/blog.js';
 
 export default {
-	title: 'Studio',
+  title: 'Digital Productcatalogue',
+  projectId: '8e703jl6',
+  dataset: 'production',
 
-	projectId: '',
-	dataset: '',
+  plugins: [
+    deskTool({
+      title: 'Blog',
+      name: 'blog',
+      structure: blog
+    }),
 
-	plugins: [deskTool(), visionTool()],
+    deskTool({
+      title: 'Settings',
+      name: 'settings',
+      structure: settings
+      }),
 
-	schema: {
-		types: schemas,
-	},
+    visionTool()
+  ],
+
+  schema: {
+    types: schemas,
+  },
 };
