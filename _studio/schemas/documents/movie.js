@@ -20,12 +20,22 @@ export default ({
 			},
 		}),
 		defineField({
+			name: 'director',
+			title: 'Director',
+		 	type: 'string',
+		}),
+		defineField({
 		 	name: 'releaseDate',
 		 	title: 'Release date',
 		 	type: 'date',
 		 	options: {
 				dateFormat: 'YYYY',
 			}
+		}),
+		defineField({
+			name: 'runtime',
+			title: 'Runtime',
+		 	type: 'string',
 		}),
 		defineField({
 		 	name: 'poster',
@@ -35,24 +45,29 @@ export default ({
 				hotspot: true,
 		 	},
 	  	}),
+		defineField({
+		 	name: 'tagline',
+		 	title: 'Tagline',
+		 	type: 'string',
+	  	}),
+		defineField({
+		 	name: 'plotSummary',
+		 	title: 'Plot summary',
+		 	type: 'text',
+	  	}),
 	  	defineField({
 		 	name: 'externalId',
 		 	title: 'External ID',
 		 	type: 'number',
 	  	}),
 	  	defineField({
-		 	name: 'popularity',
-		 	title: 'Popularity',
-		 	type: 'number',
-	  	}),
-	  	defineField({
-			title: 'Category',
-			name: 'category',
+			title: 'Genre',
+			name: 'genre',
 			type: 'array',
 			of: [
 				{
 					type: 'reference',
-					to: [{ type: 'category'}]
+					to: [{ type: 'genre'}]
 				}
 			]
 	  	}),
