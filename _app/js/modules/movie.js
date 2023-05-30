@@ -39,12 +39,19 @@ export default async function movieList() {
 			moviePlotSummary.innerText = movie.plotSummary;
 		
 			movieContainer.appendChild(movieCard);
-			movieCard.appendChild(movieImage);
+				movieCard.appendChild(movieImage);
+
 			movieContainer.appendChild(movieInformation);
-			movieInformation.appendChild(movieTitle);
+				movieInformation.appendChild(movieTitle);
+				movieInformation.appendChild(movieDirector);
+				movieInformation.appendChild(movieReleaseDate);
+				movieInformation.appendChild(movieRuntime);
+				movieInformation.appendChild(moviePlotSummary);
+
 
 			movieCard.className = 'movie-list__poster-card';
 			movieImage.className = 'movie-list__poster-image';
+
 			movieInformation.className = 'movie-list__information';
 			movieTitle.className = 'movie-list__title';
 			movieDirector.className = 'movie-list__director';
