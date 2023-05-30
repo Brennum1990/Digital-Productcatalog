@@ -1,0 +1,39 @@
+.movie-list__poster-card {
+	overflow: hidden; 
+	width: 20vw;
+	height: 60vh;
+	padding: .3rem;
+	border-radius: .2rem;
+	background-color: var(--fourth-color);
+	cursor: pointer;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+	margin: 1rem 1rem 1rem 1rem;
+}
+
+.movie-list__poster-card img{
+	height: 100%;
+	object-fit: cover;
+	border-radius: .2rem;
+}
+
+.movie-list__poster-card:hover {
+	transform: scale(1.02);
+	transition: all 0.2s ease-in-out;
+	transition-delay: 0.1s;
+}
+
+.movie-list__information {
+	display: none;
+}
+
+.movie-list__title {
+
+}
+
+.movie-list__director {
+
+}
+
+.movie-list__release-date {
+
+}

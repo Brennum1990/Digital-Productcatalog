@@ -12,7 +12,7 @@
 	--font-body-text: 1rem 'Roboto'; 
 
 	/* Grid */
-	--gap-column: .5rem;
-	--gap-row: .5rem;
+	--gap-column: 1rem;
+	--gap-row: 1rem;
 	--gap-section: 1rem;
 }
