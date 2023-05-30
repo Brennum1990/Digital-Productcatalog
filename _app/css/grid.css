@@ -1,0 +1,9 @@
+.movies {
+	width: 90vw;
+	height: 100vh;
+	background-color: var(--fourth-colorr);
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: auto;
+	z-index: 1;
+}
