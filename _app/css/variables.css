@@ -1,0 +1,18 @@
+:root {
+	/* Colors */
+	--first-color: #FFFFFF;
+	--second-color: #000000;
+	--third-color: #FFB74B;
+	--fourth-color: #B47561;
+	--background-color: #E4C595;
+	--highlight-color: #b0cbf5;
+
+	/* Fonts */
+	--font-header-text: 1rem 'Francois One'; 
+	--font-body-text: 1rem 'Roboto'; 
+
+	/* Grid */
+	--gap-column: .5rem;
+	--gap-row: .5rem;
+	--gap-section: 1rem;
+}
