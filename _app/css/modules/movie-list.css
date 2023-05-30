@@ -7,7 +7,7 @@
 	background-color: var(--fourth-color);
 	cursor: pointer;
 	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
-	margin: 1rem 1rem 1rem 1rem;
+	margin: 1rem;
 }
 
 .movie-list__poster-card img{
@@ -24,6 +24,19 @@
 
 .movie-list__information {
 	display: none;
+	padding: 1rem;
+	margin: 1rem;
+	background-color: var(--fourth-color);
+	width: 20vw;
+	min-height: 60vh;
+	border-radius: .2rem;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+
+}
+
+.active {
+	display: block;
 }
 
 .movie-list__title {
@@ -35,5 +48,22 @@
 }
 
 .movie-list__release-date {
+
+}
+
+.movie-list__runtime {
+
+}
+
+.movie-list__tagline {
+	font-style: italic;
+}
+
+.movie-list__tagline::after,
+.movie-list__tagline::before {
+	content: '"';
+}
+
+.movie-list__plot-summary {
 
 }
