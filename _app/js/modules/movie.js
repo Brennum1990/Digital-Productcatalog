@@ -1,4 +1,5 @@
 import { sanity } from "../sanity.js";
+import movieDetails from "./movie-details.js";
 
 export default async function movieList() {
 	const movieContainer = document.querySelector('.movie-list');
@@ -12,7 +13,7 @@ export default async function movieList() {
 		tagline,
 		plotSummary,
 		externalId,
-		genre,
+		genre
 	}`;
 
 	const movieList = await sanity.fetch(query); 
@@ -20,7 +21,7 @@ export default async function movieList() {
 
 	function renderMovieList() {
 		for (const movie of movieList) {
-			const movieCard = document.createElement('div');
+			const movieCard = document.createElement('a');
 			const movieImage = document.createElement('img');
 			
 			const movieInformation = document.createElement('div');
@@ -28,14 +29,17 @@ export default async function movieList() {
 			const movieDirector = document.createElement('p');
 			const movieReleaseDate = document.createElement('p');
 			const movieRuntime = document.createElement('p');
+			const movieTagline = document.createElement('p');
 			const moviePlotSummary = document.createElement('p');
 
 			movieTitle.innerText = movie.title;
 			movieImage.src = movie.imageUrl;
 			movieCard.setAttribute('alt', `${movie.title}`);
+			movieCard.setAttribute('id', `${movie.genre[1]}`);
 			movieReleaseDate.innerText = movie.releaseDate;
 			movieDirector.innerText = movie.director;
 			movieRuntime.innerText = movie.runtime; 
+			movieTagline.innerText = movie.tagline;
 			moviePlotSummary.innerText = movie.plotSummary;
 		
 			movieContainer.appendChild(movieCard);
@@ -46,6 +50,7 @@ export default async function movieList() {
 				movieInformation.appendChild(movieDirector);
 				movieInformation.appendChild(movieReleaseDate);
 				movieInformation.appendChild(movieRuntime);
+				movieInformation.appendChild(movieTagline);
 				movieInformation.appendChild(moviePlotSummary);
 
 
@@ -56,7 +61,11 @@ export default async function movieList() {
 			movieTitle.className = 'movie-list__title';
 			movieDirector.className = 'movie-list__director';
 			movieReleaseDate.className = 'movie-list__release-date';
+			movieRuntime.className = 'movie-list__runtime';
+			movieTagline.className = 'movie-list__tagline';
+			moviePlotSummary.className = 'movie-list__plot-summary';
 		}
 	}
 	renderMovieList();
+	movieDetails();
 }
