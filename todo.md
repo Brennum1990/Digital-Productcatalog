@@ -23,8 +23,10 @@
 - document types:
 	- title
 	- slug
+	- director
 	- releaseDate
+	- runtime
 	- poster
+	- tagline
 	- External ID
-	- popularity
-	- Category
+	- genre
