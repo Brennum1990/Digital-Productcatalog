@@ -9,7 +9,7 @@ export default Structure => {
 
 				divider(),
 
-				documentTypeListItem('category'),
+				documentTypeListItem('genre'),
 				documentTypeListItem('settings'),
 			])
 }
