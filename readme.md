@@ -21,3 +21,5 @@ https://www.sanity.io/manage/personal/project/8e703jl6/api
 https://www.youtube.com/watch?v=bDVAQZVeebw - Sanity.io Crash Course
 
 https://www.youtube.com/watch?v=c_8cplBi_gE - Content Platforms Explained in 100 Seconds // Build your own with Sanity
+
+https://www.sanity.io/docs/query-cheat-sheet - Query Cheat Sheet - GROQ

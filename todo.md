@@ -1,6 +1,6 @@
 # General 
 - front page
-- about nick cage
+- about nick cage X
 - colors, fonts, grid
 - Initialize a repository
 
