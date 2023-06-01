@@ -1,7 +1,6 @@
-export default function movieDetails() {
-	// Shows movie info (click event) by toggling active classes
-	const movieCard = document.querySelectorAll('.movie-list__poster-card');
-	const movieDetails = document.querySelectorAll('.movie-list__information');
+export default function filter() {
+	const movieCard = document.querySelectorAll('');
+	const movieDetails = document.getElementById('');
 
 	movieCard.forEach((tab, index) => {
 		tab.addEventListener('click', () => {
@@ -16,3 +15,5 @@ export default function movieDetails() {
 		}); 
 	});
 }
+
+// I failed at the attempt of referencing Sanitys genre id to my navbar buttons :/
