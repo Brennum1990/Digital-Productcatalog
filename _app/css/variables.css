@@ -2,14 +2,16 @@
 	/* Colors */
 	--first-color: #FFFFFF;
 	--second-color: #000000;
-	--third-color: #FFB74B;
-	--fourth-color: #B47561;
-	--background-color: #E4C595;
-	--highlight-color: #b0cbf5;
+	--third-color: #f5c173;
+	--fourth-color: #e57f3b;
+	--background-color: #511b10;
+	--highlight-color: #e3d3bd;
 
 	/* Fonts */
-	--font-header-text: 1rem 'Francois One'; 
-	--font-body-text: 1rem 'Roboto'; 
+	--font-main-title-text: 1rem 'Francois One'; 
+	--font-header-text: 1rem 'Impact'; 
+	--font-body-text: 1rem 'Doppio One'; 
+	--font-tagline-text: 1.7rem 'Yellowtail'; 
 
 	/* Grid */
 	--gap-column: 1rem;
