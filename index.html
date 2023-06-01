@@ -15,11 +15,25 @@
 		alt="Main title - Link to main page">
 		"NOT THE BEES!"
 		</a>
-		<p class="navigation__tagline">a database for Nicolas Cage movies</p>
-		<div class="genre"></div>
+		<p class="navigation__tagline">A database dedicated solely to Nicolas Cage movies</p>
+		<div class="navigation__genre">
+			<button class="navigation__genre-button" alt="All genres" onclick="filterMovie('all')">All</button>
+			<button class="navigation__genre-button" alt="Thriller" onclick="filterMovie('Thriller')">Thriller</button>
+			<button class="navigation__genre-button" alt="Crime" onclick="filterMovie('Crime')">Crime</button>
+			<button class="navigation__genre-button" alt="Comedy" onclick="filterMovie('Comedy')">Comedy</button>
+			<button class="navigation__genre-button" alt="Drama" onclick="filterMovie('Drama')">Drama</button>
+			<button class="navigation__genre-button" alt="Action" onclick="filterMovie('Action')">Action</button>
+			<button class="navigation__genre-button" alt="Mystery" onclick="filterMovie('Mystery')">Mystery</button>
+			<button class="navigation__genre-button" alt="Adventure" onclick="filterMovie('Adventure')">Adventure</button>
+			<button class="navigation__genre-button" alt="Romance" onclick="filterMovie('Romance')">Romance</button>
+			<button class="navigation__genre-button" alt="Horror" onclick="filterMovie('Horror')">Horror</button>
+			<button class="navigation__genre-button" alt="Sci-Fi" onclick="filterMovie('Sci-Fi')">Sci-Fi</button>
+			<button class="navigation__genre-button" alt="Fantasy" onclick="filterMovie('Fantasy')">Fantasy</button>
+		</div>
 	</nav>
 
-	<main class="movie-list"></main>
+	<main class="movie-list">
+	</main>
 
 	<footer class="footer">
 		<p class="footer__text">© 2023 “NOT THE BEES!” All rights reserved.</p>
