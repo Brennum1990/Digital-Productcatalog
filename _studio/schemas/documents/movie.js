@@ -27,10 +27,7 @@ export default ({
 		defineField({
 		 	name: 'releaseDate',
 		 	title: 'Release date',
-		 	type: 'date',
-		 	options: {
-				dateFormat: 'YYYY',
-			}
+		 	type: 'string',
 		}),
 		defineField({
 			name: 'runtime',
